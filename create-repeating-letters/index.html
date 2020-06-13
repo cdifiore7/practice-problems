@@ -10,11 +10,11 @@
 <body>
     <script>
         function createRepeatingLetters(word, numOfRepeats) {
-            var wordcount = [];
+            var array = [];
             for (var i = 0; i < word.length; i++) {
-                wordcount += word[i].repeat(numOfRepeats);
+                array += word[i].repeat(numOfRepeats);
             }
-            return wordcount;
+            return array;
         }
 
         console.log(createRepeatingLetters("John", 3)) // -> "JJJooohhhnnn"
