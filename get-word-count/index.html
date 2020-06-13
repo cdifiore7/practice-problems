@@ -10,23 +10,17 @@
 <body>
     <script>
         function getWordCount(sentence) {
-            var array = "";
-            for (i = 1; i < sentence.length; i++) {
-                array += sentence[i];
-            } {
-                if (i <= 3) {
-                    return ("Han shot first");
-                } else if (i <= 5) {
-                    return ("This is a sample sentence");
-                } else if (i <= 7) {
-                    return ("I will not fear, fear is the mind killer");
+            var array = 0;
+            for (i = 0; i < sentence.length; i++) {
+                if (sentence.charAt(i) === ' ') {
+                    array++;
                 }
             }
-            return array;
+            return array += 1;
         }
-        console.log(getWordCount("This is a sample sentence")) // -> 5
-        console.log(getWordCount("Han shot first")) // -> 3
-        console.log(getWordCount("I will not fear, fear is the mind killer")) // -> 9
+        console.log("This is a sample sentence", getWordCount("This is a sample sentence")); // -> 5
+        console.log("Han shot first", getWordCount("Han shot first")); // -> 3
+        console.log("I will not fear, fear is the mind killer", getWordCount("I will not fear, fear is the mind killer")); // -> 9
     </script>
 </body>
 
