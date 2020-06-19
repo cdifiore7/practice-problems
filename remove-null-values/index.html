@@ -10,10 +10,10 @@
 <body>
     <script>
         function removeNullValues(array) {
-            var index = new Array();
             for (var i = 0; i < array.length; i++) {
-                if (array[i]) {
-                    index.push(array[i]);
+                if (array[i] === null) {
+                    array.splice(i, 1);
+                    i--;
                 }
             }
             return array;
