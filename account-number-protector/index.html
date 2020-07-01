@@ -10,7 +10,9 @@
 <body>
     <script>
         function accountNumberProtector(cardNumberString) {
-            return "**" + cardNumberString.slice(cardNumberString.length - 4);
+            for (var i = 0; cardNumberString.length; i++) {
+                return "**" + cardNumberString.slice(cardNumberString.length - 4);
+            }
         }
         console.log(accountNumberProtector("5543223485638832")); // -> "**8832"
         console.log(accountNumberProtector("8934235477210943")); // -> "**0943"
