@@ -14,7 +14,7 @@
             for (var i = 0; i < stringToClear.length; i++) {
                 if (stringToClear[i] !== "f" && stringToClear[i] !== "o" && stringToClear[i] !== "g" && stringToClear.indexOf("f") > -1) {
                     fog += stringToClear[i];
-                } else if (stringToClear.indexOf("f") === -1) {
+                } else if (stringToClear.indexOf("f") === -1 && stringToClear.indexOf("o") === -1 && stringToClear.indexOf("g") === -1) {
                     return "it's a clear day!";
                 }
             }
