@@ -10,16 +10,13 @@
 <body>
     <script>
         function pocketChangeCalculator(changeArray, itemCost) {
-            var change = [];
-            for (var i = 0; i < changeArray.length; i++) {
-                if (itemCost < 7.25) {
-                    return true;
-                } else {
-                    return false;
-                }
+            if (changeArray.length >= itemCost) {
+                return true;
+            } else {
+                return false;
             }
-            return change;
         }
+
         console.log(pocketChangeCalculator([10, 5, 5, 4], 2.50)) // -> true
         console.log(pocketChangeCalculator([15, 4, 20, 15], 7.25)) // -> false
         console.log(pocketChangeCalculator([6, 20, 10, 6], 4.00)) // -> true
