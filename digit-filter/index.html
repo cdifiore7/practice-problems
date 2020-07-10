@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digit Filter</title>
+</head>
+
+<body>
+    <script>
+        function digitFilter(numbersArray, numberFilter) {
+            var num = [];
+            for (var i = 0; i < numbersArray.length; i++) {
+                if (numbersArray[i].toString().length === numberFilter) {
+                    num.push(numbersArray[i])
+                }
+            }
+            return num;
+        }
+        console.log(digitFilter([23, 312, 24, 243, 43], 3)); // -> [312, 243]
+        console.log(digitFilter([23, 315, 231, 54, 72], 2)); // -> [23, 54, 72]
+        console.log(digitFilter([1, 4323, 23, 4565, 3, 4], 1)); // -> [1, 3, 4]
+    </script>
+</body>
+
+</html>
