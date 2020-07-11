@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fractions</title>
+</head>
+
+<body>
+    <script>
+        function isGreaterThanOne(fraction) {
+            var array = fraction.split('/')
+            return (array[0] / array[1]) > 1;
+        }
+        console.log(isGreaterThanOne("7/5")); // -> "true"
+        console.log(isGreaterThanOne("3/4")); // -> "false"
+        console.log(isGreaterThanOne("13/11")); // -> "true"
+    </script>
+</body>
+
+</html>
