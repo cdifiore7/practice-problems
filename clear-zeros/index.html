@@ -10,9 +10,7 @@
 <body>
     <script>
         function clearZeros(numberString) {
-            for (var i = 0; i < numberString.length; i++) {
                 return Number(numberString).toString();
-            }
         }
         console.log(clearZeros("00032.2000")); // -> "32.2"
         console.log(clearZeros("32.07210")); // -> "32.0721"
