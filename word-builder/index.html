@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Builder</title>
+</head>
+
+<body>
+    <script>
+        function wordBuilder(wordtoSpell) {
+            var word = "";
+            var array = [];
+            for (var i = 0; i < wordtoSpell.length; i++) {
+                word += wordtoSpell[i];
+                array.push(word);
+            }
+            return array;
+        }
+        console.log(wordBuilder("JavaScript")); // -> ["J", "Ja", "Jav", "Java", "JavaS", "JavaSc", "JavaScr", "JavaScri", "JavaScrip", "JavaScript"]
+        console.log(wordBuilder("Moon")); // -> ["M", "Mo", "Moo", "Moon"]
+        console.log(wordBuilder("Stars")); // -> ["S", "St", "Sta", "Star", "Stars"]
+    </script>
+</body>
+
+</html>
